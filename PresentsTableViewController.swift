@@ -13,16 +13,20 @@ class PresentsTableViewController: UITableViewController, UIImagePickerControlle
 
     //var myGifts = [["name":"Best Friend","image":"1","item":"Camera"],["name":"Mom","image":"2","item":"Flowers"],["name":"Dad","image":"3","item":"Some kind of tech"],["name":"Sister","image":"4","item":"Sweets"]]
 
-    
     var presents = [Present]()
     
     var managedObjectContext: NSManagedObjectContext!
     
+    var detailsVC: DetailsViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.detailsVC = DetailsViewController(nibName: "DetailsViewController", bundle: nil)
+        
         let iconImageView = UIImageView(image: UIImage(named: "Shape"))
         self.navigationItem.titleView = iconImageView
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         
         self.managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
@@ -156,6 +160,17 @@ class PresentsTableViewController: UITableViewController, UIImagePickerControlle
     }
     */
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let selectedPresent: Present = self.presents[indexPath.row]
+    
+        self.detailsVC.selectedPresent = selectedPresent
+        
+        self.navigationController?.pushViewController(self.detailsVC, animated: true)
+    }
+        
+    
+    
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -176,6 +191,7 @@ class PresentsTableViewController: UITableViewController, UIImagePickerControlle
             }
             
             
+        
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    

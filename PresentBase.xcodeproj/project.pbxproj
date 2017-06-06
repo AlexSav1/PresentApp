@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA373BBD1E85745600A767C2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA373BBB1E85745600A767C2 /* DetailsViewController.swift */; };
+		FA373BBE1E85745600A767C2 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA373BBC1E85745600A767C2 /* DetailsViewController.xib */; };
 		FA3905821E783001000C44D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3905811E783001000C44D1 /* AppDelegate.swift */; };
 		FA3905871E783001000C44D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3905851E783001000C44D1 /* Main.storyboard */; };
 		FA3905891E783001000C44D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3905881E783001000C44D1 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA373BBB1E85745600A767C2 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = ../DetailsViewController.swift; sourceTree = "<group>"; };
+		FA373BBC1E85745600A767C2 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailsViewController.xib; path = ../DetailsViewController.xib; sourceTree = "<group>"; };
 		FA39057E1E783001000C44D1 /* PresentBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3905811E783001000C44D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3905861E783001000C44D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				FA3905811E783001000C44D1 /* AppDelegate.swift */,
 				FA3905931E7888F5000C44D1 /* PresentsTableViewController.swift */,
 				FA3905951E788A29000C44D1 /* PresentsTableViewCell.swift */,
+				FA373BBB1E85745600A767C2 /* DetailsViewController.swift */,
+				FA373BBC1E85745600A767C2 /* DetailsViewController.xib */,
 				FA3905971E789462000C44D1 /* PresentModel.xcdatamodeld */,
 				FA3905851E783001000C44D1 /* Main.storyboard */,
 				FA3905881E783001000C44D1 /* Assets.xcassets */,
@@ -133,6 +139,7 @@
 				FA39058C1E783001000C44D1 /* LaunchScreen.storyboard in Resources */,
 				FA3905891E783001000C44D1 /* Assets.xcassets in Resources */,
 				FA3905871E783001000C44D1 /* Main.storyboard in Resources */,
+				FA373BBE1E85745600A767C2 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +154,7 @@
 				FA3905941E7888F5000C44D1 /* PresentsTableViewController.swift in Sources */,
 				FA3905961E788A29000C44D1 /* PresentsTableViewCell.swift in Sources */,
 				FA3905991E789462000C44D1 /* PresentModel.xcdatamodeld in Sources */,
+				FA373BBD1E85745600A767C2 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +320,7 @@
 				FA3905921E783001000C44D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
